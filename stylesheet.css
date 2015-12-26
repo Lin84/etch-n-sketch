@@ -1,0 +1,53 @@
+
+body{
+	background-color: silver;
+}
+.grid{
+	height: 16px;
+	width: 16px;
+	border: black solid 1px;
+	display: inline-block;
+	
+}
+
+.grid2{
+	height: 16px;
+	width: 16px;
+	border: black solid 1px;
+	display: inline-block;
+	background-color: green;
+
+}
+
+
+
+
+button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+
+
+#container{
+	display: inline-block;
+	line-height: 0px;
+/*	height: 350px;
+	width: 350px;*/
+	/*border: blue dashed 1px;*/
+	padding: none;
+	margin: none;
+
+	
+}
+
+.newgrid{
+	background-color: green;
+
+}
+.row {
+	display: block;
+}
+
+
