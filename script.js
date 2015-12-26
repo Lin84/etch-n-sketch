@@ -1,12 +1,17 @@
+var number = 0;
+var toAdd = 0;
 
 $(document).ready(function(){
+
+	$("button").click(function(){
+		number = prompt("Type an integer between 1 and 64","20");
+		toAdd= number * number;
+		});
+
 
 	$("#option1").click(function(){
 		$("#container").empty();
 		
-		var number = prompt("Type an integer between 1 and 64");
-		var toAdd= number * number;
-
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
 		}
@@ -31,9 +36,6 @@ $(document).ready(function(){
 
 	$("#option3").click(function(){
 		$("#container").empty();
-		
-		var number = prompt("Type an integer between 1 and 64");
-		var toAdd= number * number;
 
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
@@ -54,9 +56,6 @@ $(document).ready(function(){
 
 	$("#option4").click(function(){
 		$("#container").empty();
-		
-		var number = prompt("Type an integer between 1 and 64");
-		var toAdd= number * number;
 
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
@@ -80,9 +79,6 @@ $(document).ready(function(){
 
 	$("#option5").click(function(){
 		$("#container").empty();
-		
-		var number = prompt("Type an integer between 1 and 10");
-		var toAdd= number * number;
 
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
@@ -104,9 +100,7 @@ $(document).ready(function(){
 
 	$("#option6").click(function(){
 		$("#container").empty();
-		
-		var number = prompt("Type an integer between 1 and 10");
-		var toAdd= number * number;
+
 
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
@@ -129,9 +123,6 @@ $(document).ready(function(){
 
 	$("#option7").click(function(){
 		$("#container").empty();
-		
-		var number = prompt("Type an integer between 1 and 10");
-		var toAdd= number * number;
 
 		for(var i=1; i<=number; i++){
 			$("#container").append('<div class="row"></div>');
@@ -141,27 +132,12 @@ $(document).ready(function(){
 			$(".row").append('<div class="grid"> </div>');
 		};
 
-		// var randomcolor= Math.floor((Math.random()*99)+1)
-
-		// var randomColor = Math.floor(Math.random()*16777215).toString(16);
-		  // var back = ["red","blue","gray"];
-  		// var rand = back[Math.floor(Math.random() * back.length)];
-  // 		$('div').css('background',rand);
 		$(".grid").mouseenter(function(){
 			$(this).addClass("newgrid");
 			var newColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 			$(this).css("background", newColor );
-			// $(this).css({
-			// 	opacity: 0.5;
-			// });
-			
 		});		
 	});
-
-
-		
-	
-	
 
 
 
