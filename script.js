@@ -4,7 +4,7 @@ var toAdd = 0;
 $(document).ready(function(){
 
 	$("button").click(function(){
-		number = prompt("Type an integer between 1 and 64","20");
+		number = prompt("Type an integer between 1 and 64","30");
 		toAdd= number * number;
 		});
 
